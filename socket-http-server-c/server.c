@@ -71,6 +71,8 @@ int main()
         // Buffer is a character array (or buffer) where the data read from the socket will be stored.
         // In this case, buffer is a pre-allocated array of 1024 bytes (char buffer[1024]), which means it can hold up to 1024 characters (or bytes) of incoming data.
 
+        sleep(8);
+
         int valread = read(client_id, buffer, 1024-1);
         if (valread <= 0)
         {
